@@ -8,12 +8,12 @@ import { Collapse } from "@material-ui/core";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 600,
+    maxWidth: 450,
     background: "rgba(0,0,0,0.5)",
     margin: "20px",
   },
   media: {
-    height: 400,
+    height: 300,
   },
   title: {
     fontFamily: "Nunito",
@@ -32,7 +32,7 @@ export default function ImageCard({ place, checked }) {
   const classes = useStyles();
 
   return (
-    <Collapse in={checked}>
+    <Collapse in={checked} {...(checked ? { timeout: 1000 } : {})}>
       <Card className={classes.root}>
         <CardMedia
           className={classes.media}
