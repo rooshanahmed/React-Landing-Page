@@ -1,10 +1,14 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core'
-import ImageCard from './imageCard';
+import ImageCard from './imageCard'
+import places from '../static/places'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        height: '100vh',
+        minHeight: '100vh',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
 }))
 
@@ -13,7 +17,8 @@ export default function PlaceToVisit() {
 
     return(
         <div className={classes.root}>
-            <ImageCard />
+            <ImageCard place={places[0]} />
+            <ImageCard place={places[1]} />
         </div>
     )
 }
