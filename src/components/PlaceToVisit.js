@@ -17,8 +17,8 @@ export default function PlaceToVisit() {
 
     return(
         <div className={classes.root}>
-            <ImageCard place={places[0]} />
             <ImageCard place={places[1]} />
+            <ImageCard place={places[0]} />
         </div>
     )
 }
