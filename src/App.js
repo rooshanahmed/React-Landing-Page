@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles, CssBaseline } from "@material-ui/core";
 import Header from "./components/Header";
 import PlaceToVisit from "./components/PlaceToVisit";
+import Footer from "./components/Footer";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,6 +21,7 @@ export default function App() {
       <CssBaseline />
       <Header />
       <PlaceToVisit />
+      <Footer />
     </div>
   );
 }
