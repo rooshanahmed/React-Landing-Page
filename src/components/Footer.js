@@ -5,13 +5,12 @@ import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   text: {
-    marginBottom: "16px",
     color: "#fff",
     fontFamily: "Nunito",
     fontSize: "2rem",
+    // marginBottom: "16px",
   },
   root: {
-    Height: "100vh",
     display: "flex",
     maxWidth: "1000px",
     justifyContent: "space-between",
@@ -23,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
       justifyContent: "space-between",
       alignItems: "center",
       width: "240px",
+      marginBottom: "16px",
   },
   link:{
       color: "#fff",
@@ -31,7 +31,6 @@ const useStyles = makeStyles((theme) => ({
       textDecoration: "none",
       fontSize: "2rem",
       alignItems: "center",
-      marginBottom: "16px",
   }
 }));
 
