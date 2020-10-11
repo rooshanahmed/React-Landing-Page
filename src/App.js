@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 const useStyles = makeStyles((theme) => ({
   root: {
     minHeight: "100vh",
-    backgroundImage: `url(${process.env.PUBLIC_URL + "/assests/bg1.jpg"})`,
+    backgroundImage: `url(${process.env.PUBLIC_URL + "/assests/bgd.jpg"})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
   },
