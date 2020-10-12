@@ -17,21 +17,24 @@ const useStyles = makeStyles((theme) => ({
     margin: "40px auto 0 auto",
     alignItems: "center",
   },
-  social:{
-      display: "flex",
-      justifyContent: "space-between",
-      alignItems: "center",
-      width: "240px",
-      marginBottom: "16px",
+  social: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    width: "240px",
+    marginBottom: "16px",
   },
-  link:{
-      color: "#fff",
-      justifySelf: "start",
-      cursor: "pointer",
-      textDecoration: "none",
-      fontSize: "2rem",
-      alignItems: "center",
-  }
+  link: {
+    color: "#fff",
+    justifySelf: "start",
+    cursor: "pointer",
+    textDecoration: "none",
+    fontSize: "2rem",
+    alignItems: "center",
+  },
+  colorText: {
+    color: "#5aff3d",
+  },
 }));
 
 const Footer = () => {
@@ -39,7 +42,9 @@ const Footer = () => {
 
   return (
     <div className={classes.root}>
-      <h4 className={classes.text}>MyIsland&copy;</h4>
+      <h4 className={classes.text}>
+        My<span className={classes.colorText}>Island</span>&copy;
+      </h4>
       <div className={classes.social}>
         <Link to="/" className={classes.link}>
           <FaFacebook />
